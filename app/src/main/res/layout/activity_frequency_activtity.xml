@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#252924"
+    tools:context=".frequencyActivtity">
+
+    <EditText
+        android:id="@+id/frequnecy_ed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:fontFamily="@font/alata"
+        android:hint="Enter Unit"
+        android:inputType="numberDecimal"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frequnecy_ed">
+
+        <RadioButton
+            android:id="@+id/hztokz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#252924"
+            android:fontFamily="@font/alata"
+            android:text="Hertz to Kilo Hertz"
+            android:textColor="#FFFFFF" />
+
+
+        <RadioButton
+            android:id="@+id/mztohz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#252924"
+            android:fontFamily="@font/alata"
+            android:text="Mega Hertz to Hertz"
+            android:textColor="#FFFFFF" />
+
+        <RadioButton
+            android:id="@+id/mztokz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#252924"
+            android:fontFamily="@font/alata"
+            android:text="Mega Hertz to Kilo Hertz"
+            android:textColor="#FFFFFF" />
+
+        <RadioButton
+            android:id="@+id/hztomz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#252924"
+            android:fontFamily="@font/alata"
+            android:text="Hertz to MegaHertz"
+            android:textColor="#FFFFFF" />
+
+        <RadioButton
+            android:id="@+id/kztohz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#252924"
+            android:fontFamily="@font/alata"
+            android:text="Kilo Hertz to Hertz"
+            android:textColor="#FFFFFF" />
+
+        <RadioButton
+            android:id="@+id/kztomz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#252924"
+            android:fontFamily="@font/alata"
+            android:text="Kilo Hertz to Mega Hertz"
+            android:textColor="#FFFFFF" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/bt_convert"
+        style="@style/Widget.Material3.Button.ElevatedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/alata"
+        android:text="Convert"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <TextView
+        android:id="@+id/answer_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="#252924"
+        android:fontFamily="@font/alata"
+        android:text=""
+        android:textColor="#F8F5F5"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_convert" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
